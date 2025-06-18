@@ -1,3 +1,5 @@
 week_1
 
-Learned about Git and Github completely.
+Learned about Git and Github completely. 
+
+Learned about all the neccessary commands.
