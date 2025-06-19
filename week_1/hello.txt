@@ -1,3 +1,75 @@
-week_1
+Git and Github
 
-Learned about Git and Github completely.
+Git : Git is a version control system which helps us to track changes in the code. It is a tool that is installed on our local system which helps us to manage our code and to track changes in our code.
+
+Github : Github is a cloud-based platform that allows the developers to share, store and manage their code online. It provides a centralized space for storing and collaborating on code with others.
+
+clone and status commands
+clone - with the help of this command we can clone a repository on our local machine.
+syntax : git clone <repo link>
+
+status - it shows the status of our current working directory.
+syntax : git status
+It helps us to know which files are:
+ Tracked and unmodified
+ Modified but not staged
+ Staged for commit
+ Untracked (new files not added to Git yet)
+
+add and commit commands
+add - It helps to add new or changed files in the directory to the git staging area.
+syntax : git add <file name> (a particular file)
+         git add . (for all changed files)
+
+commit - It is used to save the changes to the git.
+syntax : git commit -m "message"
+
+Branch : A branch in Git is like a separate workspace or timeline of our code where we can work on new features, fix bugs, or test ideas without affecting the main project.
+
+branch commands:
+git branch                   (to check all the branches)
+git branch -M <branch name> (to rename a branch)
+git checkout <branch name>  (to navigate to a specific branch)
+git checkout -b <new branch name> (to create a new branch)
+git branch -d <branch name> (to delete a branch)
+
+push and pull commands
+push - It helps in uploading a local repo content to the remote repo.
+syntax : git push origin main
+
+pull - It is used to fetch and download content from a remote repo and immediately update the local repo to match that content.
+syntax : git pull origin main
+
+init and remote command
+init - The git init command is used to initialize a new git repository in our project folder.
+syntax : git init
+
+remote - The git remote command is used to connect the local repository to the remote repository.
+syntax : git remote add origin <github repo link>
+         git remote -v (to verify remote repository)
+
+Merging code : It is the process of combining the changes of one branch to another — usually to bring changes from the other branches to the main branch.
+
+There are two ways for merging the code:
+1. using diff and merge command
+   git diff <branch name> (to compare commits, branches and files)
+   git merge <branch name> (to merge the specific branch and the current branch)
+
+2. using PR (pull request)
+   It lets us tell others about the changes we have pushed to a branch in a repository on GitHub so that the other team members can review the changes and accept it to merge the changes into other branches — usually the main branch.
+
+Merging conflicts : A merge conflict happens when Git can’t automatically combine changes from two branches because the same lines in the same file were changed differently.
+
+Resolving the merging conflicts:
+If Git detects conflicting changes in the same part of a file, it will pause the merge and mark those files as conflicted. We can open the conflicted files, and remove the conflict markers like <<<<<<<, =======, and >>>>>>> which are showing the differences between the branches. Then manually edit the file to keep the correct content and save the file. Once resolved, mark the file as fixed using git add <filename>, then complete the merge with git commit -m "Resolved merge conflict". Finally, push the changes if needed using git push.
+
+Fork : A fork is a copy of a repository that we can save to our GitHub account, allowing us to freely make changes without affecting the original project. It is commonly used when we want to contribute to someone else's project or experiment with new ideas. After forking, we can clone the repository to our local machine, create a new branch, make our changes, and then push them to our forked repo. Once our changes are ready, we can submit a pull request to suggest our updates to the original project.
+
+Undoing changes with reset command:
+1. Staged Changes
+   git reset <file name>          (for a particular file)
+   git reset                      (for all the files that are staged for commit)
+
+2. Committed Changes
+   git reset HEAD~1              (to undo the last commit but keep the changes)
+   git reset --hard <commit hash> (move the repository back to a specific commit and delete all changes after it)
