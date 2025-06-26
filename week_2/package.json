@@ -1,5 +1,6 @@
 {
-  "name": "tailwind-site",
+  "name": "week_2",
+  "version": "1.0.0",
   "scripts": {
     "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css --minify"
   },
