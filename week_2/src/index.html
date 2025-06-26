@@ -44,257 +44,288 @@
   <!-- Navbar Started -->
 
   <header class="bg-[var(--surface-color)] w-full border-b border-[var(--border-color)] shadow-sm sticky top-0 z-50">
-    <nav class="max-w-8xl mx-auto px-6 md:px-10 py-4 flex justify-between items-center">
-      <div class="text-2xl font-bold text-[var(--primary-color)]">SecurePay</div>
-      <ul class="hidden md:flex space-x-6 ">
-        <li><a href="#home" class="hover:text-[var(--primary-color)] font-semibold">Home</a></li>
-        <li><a href="#products" class="hover:text-[var(--primary-color)] font-semibold">Products</a></li>
-        <li><a href="#benefits" class="hover:text-[var(--primary-color)] font-semibold">Benefits</a></li>
-        <li><a href="#faqs" class="hover:text-[var(--primary-color)] font-semibold">FAQs</a></li>
-        <li><a href="#contact" class="hover:text-[var(--primary-color)] font-semibold">Contact Us</a></li>
-      </ul>
-      <div class="block md:hidden"><img src="https://www.svgrepo.com/show/506800/burger-menu.svg" alt="hamburger icon  " class="h-9 w-9 " ></div>
-      <div class="hidden md:flex gap-2">
-        <button
-          class="bg-[var(--primary-color)] hover:bg-[var(--primary-hover)] text-[var(--primary-text)] px-4 py-2 font-medium rounded-md transition">Login</button>
-        <button
-          class="bg-[var(--secondary-color)] hover:bg-[var(--secondary-hover)] text-[var(--secondary-text)] px-4 py-2 font-medium rounded-md transition">Sign
-          Up</button>
-      </div>
-    </nav>
-  </header>
+  <nav class="max-w-8xl mx-auto px-6 md:px-10 py-4 flex justify-between items-center">
+    <div class="text-2xl font-bold text-[var(--primary-color)]">SecurePay</div>
+
+    <ul class="hidden md:flex space-x-6">
+      <li><a href="#home" class="md:hover:text-[var(--primary-color)] active:text-[var(--primary-color)] focus:text-[var(--primary-color)] font-semibold">Home</a></li>
+      <li><a href="#products" class="md:hover:text-[var(--primary-color)] active:text-[var(--primary-color)] focus:text-[var(--primary-color)] font-semibold">Products</a></li>
+      <li><a href="#benefits" class="md:hover:text-[var(--primary-color)] active:text-[var(--primary-color)] focus:text-[var(--primary-color)] font-semibold">Benefits</a></li>
+      <li><a href="#faqs" class="md:hover:text-[var(--primary-color)] active:text-[var(--primary-color)] focus:text-[var(--primary-color)] font-semibold">FAQs</a></li>
+      <li><a href="#contact" class="md:hover:text-[var(--primary-color)] active:text-[var(--primary-color)] focus:text-[var(--primary-color)] font-semibold">Contact Us</a></li>
+    </ul>
+    <div class="block md:hidden">
+      <img src="https://www.svgrepo.com/show/506800/burger-menu.svg" alt="hamburger icon" class="h-9 w-9">
+    </div>
+
+    <div class="hidden md:flex gap-2">
+      <button class="bg-[var(--primary-color)] md:hover:bg-[var(--primary-hover)] active:bg-[var(--primary-hover)] focus:bg-[var(--primary-hover)] text-[var(--primary-text)] px-4 py-2 font-medium rounded-md transition">
+        Login
+      </button>
+      <button class="bg-[var(--secondary-color)] md:hover:bg-[var(--secondary-hover)] active:bg-[var(--secondary-hover)] focus:bg-[var(--secondary-hover)] text-[var(--secondary-text)] px-4 py-2 font-medium rounded-md transition">
+        Sign Up
+      </button>
+    </div>
+  </nav>
+</header>
 
 <main>
 
   <!-- Hero Section -->
 
-  <section id="home" class="scroll-mt-23 bg-[var(--surface-color)] py-10 border-b border-[var(--border-color)]">
-    <div class="flex flex-col-reverse md:flex-row justify-center items-center max-w-6xl mx-auto px-6 gap-10">
-      <div class="w-full md:w-1/2">
-        <h1 class="text-4xl sm:text-5xl font-bold leading-tight mb-4">
-          The <span class="text-[var(--primary-color)]">Smart</span> way to
-          <span class="text-[var(--primary-color)]">Accept</span> and
-          <span class="text-[var(--primary-color)]">Manage Payments</span>
-        </h1>
-        <p class="text-lg text-[var(--subtext-color)] text-justify mb-4">
-          Empower your business with fast, secure, and reliable digital payments. Whether you're a startup or an
-          enterprise, SecurePay scales with you.
-        </p>
-        <p class="text-base text-[var(--subtext-color)] mb-4">
-          Start accepting payments today — it's <span class="font-medium text-[var(--primary-color)]">fast, easy, and
-            secure</span>.
-        </p>
-        <button
-          class="bg-[var(--secondary-color)] text-white px-6 py-3 flex rounded-md hover:bg-[var(--secondary-hover)] font-medium transition">Start
-          Now</button>
-      </div>
-      <div class="w-full md:w-1/2 flex justify-center">
-        <img src="https://img.freepik.com/premium-vector/online-payment-concept_118813-2685.jpg" alt="Secure Payment"
-          class="max-w-md w-full" />
-      </div>
+<section id="home" class="scroll-mt-23 bg-[var(--surface-color)] py-10 border-b border-[var(--border-color)]">
+  <div class="flex flex-col-reverse md:flex-row justify-center items-center max-w-6xl mx-auto px-6 gap-10">
+    <div class="w-full md:w-1/2">
+      <h1 class="text-4xl sm:text-5xl font-bold leading-tight mb-4">
+        The <span class="text-[var(--primary-color)]">Smart</span> way to
+        <span class="text-[var(--primary-color)]">Accept</span> and
+        <span class="text-[var(--primary-color)]">Manage Payments</span>
+      </h1>
+      <p class="text-lg text-[var(--subtext-color)] text-justify mb-4">
+        Empower your business with fast, secure, and reliable digital payments. Whether you're a startup or an
+        enterprise, SecurePay scales with you.
+      </p>
+      <p class="text-base text-[var(--subtext-color)] mb-4">
+        Start accepting payments today — it's <span class="font-medium text-[var(--primary-color)]">fast, easy, and
+          secure</span>.
+      </p>
+      <button
+        class="bg-[var(--secondary-color)] text-white px-6 py-3 flex rounded-md md:hover:bg-[var(--secondary-hover)] active:bg-[var(--secondary-hover)] focus:bg-[var(--secondary-hover)] font-medium transition">
+        Start Now
+      </button>
     </div>
-  </section>
+    <div class="w-full md:w-1/2 flex justify-center">
+      <img src="https://img.freepik.com/premium-vector/online-payment-concept_118813-2685.jpg" alt="Secure Payment"
+        class="max-w-md w-full" />
+    </div>
+  </div>
+</section>
 
   <!-- Products section -->
+<section id="products" class="scroll-mt-18 bg-indigo-100 px-6 py-10 border-b border-[var(--border-color)]">
+  <div class="text-center text-[var(--text-color)] mb-4">
+    Certified with PCI DSS and enterprise-grade security, SecurePay ensures safe and seamless transactions.
+  </div>
+  <h2 class="text-3xl sm:text-4xl font-bold text-[var(--primary-color)] text-center mb-2">Product Suite</h2>
+  <p class="text-center text-[var(--text-color)] mb-6">Flexible payment tools built for every business model.</p>
 
-  <section id="products" class="scroll-mt-18 bg-indigo-100 px-6 py-10   border-b border-[var(--border-color)]">
-    <div class="text-center   text-[var(--text-color)] mb-4">
-      Certified with PCI DSS and enterprise-grade security, SecurePay ensures safe and seamless transactions.
+  <div class="flex flex-wrap justify-center gap-6">
+
+    <div class="w-full sm:w-[300px] md:w-[350px] bg-white text-[var(--text-color)] border border-[var(--border-color)] 
+                rounded-xl shadow-sm hover:bg-pink-100 md:hover:shadow-md active:bg-pink-100 focus:bg-pink-100 
+                active:shadow-md focus:shadow-md p-6 transition flex flex-col items-center text-center">
+      <img src="https://cdn-icons-png.flaticon.com/512/10551/10551890.png" alt="Online Payments" class="w-16 h-16 mb-4" />
+      <h3 class="text-xl font-bold mb-2">Online Payments</h3>
+      <p class="text-sm mb-3">
+        Accept payments via cards, UPI, net banking, and wallets—all through a single secure interface. Easily integrate with your website or app and start collecting payments instantly.
+      </p>
+      <a href="#" class="text-[var(--primary-color)] font-medium hover:underline text-sm">Learn More →</a>
     </div>
-    <h2 class="text-3xl sm:text-4xl font-bold text-[var(--primary-color)] text-center mb-2">Product Suite</h2>
-    <p class="text-center text-[var(--text-color)] mb-6">Flexible payment tools built for every business model.</p>
 
-    <div class="flex flex-wrap justify-center gap-6">
-
-
-      <div
-        class="w-full sm:w-[300px] md:w-[350px] bg-white text-[var(--text-color)] border border-[var(--border-color)] rounded-xl shadow-sm hover:bg-pink-100 p-6 hover:shadow-md transition flex flex-col items-center text-center">
-        <img src="https://cdn-icons-png.flaticon.com/512/10551/10551890.png" alt="Online Payments"
-          class="w-16 h-16 mb-4" />
-        <h3 class="text-xl font-bold mb-2">Online Payments</h3>
-        <p class="text-sm mb-3">
-          Accept payments via cards, UPI, net banking, and wallets—all through a single secure interface. Easily
-          integrate with your website or app and start collecting payments instantly.
-        </p>
-        <a href="#" class="text-[var(--primary-color)] font-medium hover:underline text-sm">Learn More →</a>
-      </div>
-
-      <div
-        class="w-full sm:w-[300px] md:w-[350px] bg-white text-[var(--text-color)] border border-[var(--border-color)] rounded-xl shadow-sm hover:bg-pink-100 p-6 hover:shadow-md transition flex flex-col items-center text-center">
-        <img src="https://cdn-icons-png.flaticon.com/512/1466/1466662.png" alt="B2B e-Collect" class="w-15 h-15 mb-4" />
-        <h3 class="text-xl font-bold mb-2">B2B e-Collect</h3>
-        <p class="text-sm mb-3">
-          Collect payments from partners or distributors using unique Virtual Account Numbers. Automate reconciliation
-          and track all incoming payments in real-time.
-        </p>
-        <a href="#" class="text-[var(--primary-color)] font-medium hover:underline text-sm">Learn More →</a>
-      </div>
-
-      <div
-        class="w-full sm:w-[300px] md:w-[350px] bg-white text-[var(--text-color)]  hover:bg-gray-100border border-[var(--border-color)] hover:bg-pink-100 rounded-xl shadow-sm p-6 hover:shadow-md transition flex flex-col items-center text-center">
-        <img src="https://cdn-icons-png.flaticon.com/512/1121/1121954.png" alt="eNACH" class="w-15 h-15 mb-4" />
-        <h3 class="text-xl font-bold mb-2">eNACH</h3>
-        <p class="text-sm mb-3">
-          Enable auto-debit mandates digitally for subscriptions, loans, or EMIs. Reduce manual effort and get timely
-          payments from customers with fully automated workflows.
-        </p>
-        <a href="#" class="text-[var(--primary-color)] font-medium hover:underline text-sm">Learn More →</a>
-      </div>
-
-      <div
-        class="w-full sm:w-[300px] md:w-[350px] bg-white text-[var(--text-color)] border border-[var(--border-color)] hover:bg-pink-100 rounded-xl shadow-sm p-6 hover:shadow-md transition flex flex-col items-center text-center">
-        <img src="https://cdn-icons-png.freepik.com/256/1936/1936150.png?semt=ais_hybrid" alt="Smart Payouts"
-          class="w-15 h-15 mb-4" />
-        <h3 class="text-xl font-bold mb-2">Smart Payouts</h3>
-        <p class="text-sm mb-3">
-          Make instant payouts to vendors, employees, or customers. Control payout timing, view status, and download
-          detailed reports—all in one dashboard.
-        </p>
-        <a href="#" class="text-[var(--primary-color)] font-medium hover:underline text-sm">Learn More →</a>
-      </div>
-
-
-      <div
-        class="w-full sm:w-[300px] md:w-[350px] bg-white text-[var(--text-color)]  border border-[var(--border-color)] hover:bg-pink-100 rounded-xl shadow-sm p-6 hover:shadow-md transition flex flex-col items-center text-center">
-        <img src="https://cdn-icons-png.flaticon.com/512/9872/9872434.png" alt="Payment Links" class="w-15 h-15 mb-4" />
-        <h3 class="text-xl font-bold mb-2">Universal Payment Links</h3>
-        <p class="text-sm mb-3">
-          Create one-click payment links and share them via SMS, email, or social media. No technical setup
-          required—collect payments without needing a website.
-        </p>
-        <a href="#" class="text-[var(--primary-color)] font-medium hover:underline text-sm">Learn More →</a>
-      </div>
-
+    <div class="w-full sm:w-[300px] md:w-[350px] bg-white text-[var(--text-color)] border border-[var(--border-color)] 
+                rounded-xl shadow-sm hover:bg-pink-100 md:hover:shadow-md active:bg-pink-100 focus:bg-pink-100 
+                active:shadow-md focus:shadow-md p-6 transition flex flex-col items-center text-center">
+      <img src="https://cdn-icons-png.flaticon.com/512/1466/1466662.png" alt="B2B e-Collect" class="w-15 h-15 mb-4" />
+      <h3 class="text-xl font-bold mb-2">B2B e-Collect</h3>
+      <p class="text-sm mb-3">
+        Collect payments from partners or distributors using unique Virtual Account Numbers. Automate reconciliation and track all incoming payments in real-time.
+      </p>
+      <a href="#" class="text-[var(--primary-color)] font-medium hover:underline text-sm">Learn More →</a>
     </div>
-  </section>
+
+    <div class="w-full sm:w-[300px] md:w-[350px] bg-white text-[var(--text-color)] border border-[var(--border-color)] 
+                rounded-xl shadow-sm hover:bg-pink-100 md:hover:shadow-md active:bg-pink-100 focus:bg-pink-100 
+                active:shadow-md focus:shadow-md p-6 transition flex flex-col items-center text-center">
+      <img src="https://cdn-icons-png.flaticon.com/512/1121/1121954.png" alt="eNACH" class="w-15 h-15 mb-4" />
+      <h3 class="text-xl font-bold mb-2">eNACH</h3>
+      <p class="text-sm mb-3">
+        Enable auto-debit mandates digitally for subscriptions, loans, or EMIs. Reduce manual effort and get timely payments from customers with fully automated workflows.
+      </p>
+      <a href="#" class="text-[var(--primary-color)] font-medium hover:underline text-sm">Learn More →</a>
+    </div>
+
+    <div class="w-full sm:w-[300px] md:w-[350px] bg-white text-[var(--text-color)] border border-[var(--border-color)] 
+                rounded-xl shadow-sm hover:bg-pink-100 md:hover:shadow-md active:bg-pink-100 focus:bg-pink-100 
+                active:shadow-md focus:shadow-md p-6 transition flex flex-col items-center text-center">
+      <img src="https://cdn-icons-png.freepik.com/256/1936/1936150.png?semt=ais_hybrid" alt="Smart Payouts" class="w-15 h-15 mb-4" />
+      <h3 class="text-xl font-bold mb-2">Smart Payouts</h3>
+      <p class="text-sm mb-3">
+        Make instant payouts to vendors, employees, or customers. Control payout timing, view status, and download detailed reports—all in one dashboard.
+      </p>
+      <a href="#" class="text-[var(--primary-color)] font-medium hover:underline text-sm">Learn More →</a>
+    </div>
+
+    <div class="w-full sm:w-[300px] md:w-[350px] bg-white text-[var(--text-color)] border border-[var(--border-color)] 
+                rounded-xl shadow-sm hover:bg-pink-100 md:hover:shadow-md active:bg-pink-100 focus:bg-pink-100 
+                active:shadow-md focus:shadow-md p-6 transition flex flex-col items-center text-center">
+      <img src="https://cdn-icons-png.flaticon.com/512/9872/9872434.png" alt="Payment Links" class="w-15 h-15 mb-4" />
+      <h3 class="text-xl font-bold mb-2">Universal Payment Links</h3>
+      <p class="text-sm mb-3">
+        Create one-click payment links and share them via SMS, email, or social media. No technical setup required—collect payments without needing a website.
+      </p>
+      <a href="#" class="text-[var(--primary-color)] font-medium hover:underline text-sm">Learn More →</a>
+    </div>
+
+  </div>
+</section>
+
 
 <!-- Benefits Section -->
 
-  <section id="benefits"
-    class="scroll-mt-18  mx-auto bg-[var(--surface-color)] px-5 md:px-27 sm:20 py-6 border-b border-[var(--border-color)]">
-    <h2 class="text-3xl sm:text-4xl mb-5 pt-5 font-bold text-[var(--text-color)] text-center ">More reasons to join
-    </h2>
-    <p class="text-center text-[var(--subtext-color)] mb-6"> Powerful payment solutions trusted by growing businesses and
-      large enterprises alike.</p>
+ <section id="benefits"
+  class="scroll-mt-18 mx-auto bg-[var(--surface-color)] px-5 md:px-27 sm:20 py-6 border-b border-[var(--border-color)]">
+  <h2 class="text-3xl sm:text-4xl mb-5 pt-5 font-bold text-[var(--text-color)] text-center">More reasons to join</h2>
+  <p class="text-center text-[var(--subtext-color)] mb-6">
+    Powerful payment solutions trusted by growing businesses and large enterprises alike.
+  </p>
+
+  <div class="flex flex-nowrap mx-auto scroll-smooth mb-3 snap-x snap-mandatory overflow-x-auto w-full gap-6 pl-6 pr-6">
+
+  
     <div
-      class="flex flex-nowrap mx-auto scroll-smooth mb-3 snap-x snap-mandatory overflow-x-auto w-full gap-6 pl-6 pr-6">
-
-      <div
-        class="flex flex-col items-center justify-center shrink-0 text-center w-[250px] p-6  rounded-xl bg-white mb-4 hover:shadow-2xl  transition">
-        <img src="https://cdn-icons-png.flaticon.com/512/4064/4064859.png" class="w-17 h-17 mb-4" alt="Fast Icon">
-        <h3 class="text-xl font-semibold mb-2">Fast Settlements</h3>
-        <p class="text-[var(--subtext-color)] text-center">
-          Funds are transferred directly into your bank account without unnecessary delays.
-        </p>
-      </div>
-      <div
-        class="flex flex-col items-center shrink-0  text-center w-[250px] p-6  rounded-xl bg-white mb-4 hover:shadow-2xl  transition">
-        <img src="https://cdn-icons-png.flaticon.com/512/10108/10108414.png" class="w-17 h-17 mb-4" alt="Security Icon">
-        <h3 class="text-xl font-semibold mb-2">Advanced Security</h3>
-        <p class="text-[var(--subtext-color)] text-center">
-          Every transaction is protected with end-to-end encryption, PCI-DSS Level 1 compliance.
-      </div>
-      <div
-        class="flex flex-col items-center shrink-0  text-center w-[250px] p-6  rounded-xl bg-white mb-4 hover:shadow-2xl  transition">
-        <img src="https://cdn-icons-png.flaticon.com/256/4661/4661320.png" class="w-17 h-17 mb-4"
-          alt="developer support Icon">
-        <h3 class="text-xl font-semibold mb-2">Developer Support</h3>
-        <p class="text-[var(--subtext-color)] text-center">
-          SecurePay provides code samples, real-time logs, and expert technical support to get you live-fast.
-
-
-      </div>
-      <div
-        class="flex flex-col items-center shrink-0  text-center w-[250px] p-6  rounded-xl bg-white mb-4 hover:shadow-2xl  transition">
-        <img src="https://cdn-icons-png.flaticon.com/512/6821/6821002.png" class="w-17 h-17 mb-4" alt="dashboard Icon">
-        <h3 class="text-xl font-semibold mb-2">Smart Dashboard</h3>
-        <p class="text-[var(--subtext-color)] text-center">
-          Monitor transactions, refund requests, success rates, and performance metrics in real time.
-        </p>
-      </div>
-      <div
-        class="flex flex-col items-center shrink-0  text-center w-[250px] p-6  rounded-xl bg-white mb-4 hover:shadow-2xl  transition">
-        <img src="https://cdn-icons-png.flaticon.com/256/6012/6012388.png" class="w-17 h-17 mb-4" alt=" support Icon">
-        <h3 class="text-xl font-semibold mb-2"> Dedicated Support</h3>
-        <p class="text-[var(--subtext-color)] text-center">
-          SecurePay gives 24/7 expert help and a personal manager to support your growth.
-
-
-        </p>
-      </div>
-
-
+      class="flex flex-col items-center justify-center shrink-0 text-center w-[250px] p-6 rounded-xl bg-white mb-4 
+             md:hover:shadow-2xl shadow-xl
+             transition duration-300 ease-in-out">
+      <img src="https://cdn-icons-png.flaticon.com/512/4064/4064859.png" class="w-17 h-17 mb-4" alt="Fast Icon">
+      <h3 class="text-xl font-semibold mb-2">Fast Settlements</h3>
+      <p class="text-[var(--subtext-color)] text-center">
+        Funds are transferred directly into your bank account without unnecessary delays.
+      </p>
     </div>
-  </section>
+
+  
+    <div
+      class="flex flex-col items-center justify-center shrink-0 text-center w-[250px] p-6 rounded-xl bg-white mb-4 
+             md:hover:shadow-2xl  shadow-xl
+             transition duration-300 ease-in-out">
+      <img src="https://cdn-icons-png.flaticon.com/512/10108/10108414.png" class="w-17 h-17 mb-4" alt="Security Icon">
+      <h3 class="text-xl font-semibold mb-2">Advanced Security</h3>
+      <p class="text-[var(--subtext-color)] text-center">
+        Every transaction is protected with end-to-end encryption, PCI-DSS Level 1 compliance.
+      </p>
+    </div>
+
+  
+    <div
+      class="flex flex-col items-center justify-center shrink-0 text-center w-[250px] p-6 rounded-xl bg-white mb-4 
+             md:hover:shadow-2xl shadow-xl 
+             transition duration-300 ease-in-out">
+      <img src="https://cdn-icons-png.flaticon.com/256/4661/4661320.png" class="w-17 h-17 mb-4" alt="Developer Icon">
+      <h3 class="text-xl font-semibold mb-2">Developer Support</h3>
+      <p class="text-[var(--subtext-color)] text-center">
+        SecurePay provides code samples, real-time logs, and expert technical support to get you live-fast.
+      </p>
+    </div>
+
+    <div
+      class="flex flex-col items-center justify-center shrink-0 text-center w-[250px] p-6 rounded-xl bg-white mb-4 
+             md:hover:shadow-2xl shadow-xl
+             transition duration-300 ease-in-out">
+      <img src="https://cdn-icons-png.flaticon.com/512/6821/6821002.png" class="w-17 h-17 mb-4" alt="Dashboard Icon">
+      <h3 class="text-xl font-semibold mb-2">Smart Dashboard</h3>
+      <p class="text-[var(--subtext-color)] text-center">
+        Monitor transactions, refund requests, success rates, and performance metrics in real time.
+      </p>
+    </div>
+
+    <div
+      class="flex flex-col items-center justify-center shrink-0 text-center w-[250px] p-6 rounded-xl bg-white mb-4 
+             md:hover:shadow-2xl shadow-xl
+             transition duration-300 ease-in-out">
+      <img src="https://cdn-icons-png.flaticon.com/256/6012/6012388.png" class="w-17 h-17 mb-4" alt="Support Icon">
+      <h3 class="text-xl font-semibold mb-2">Dedicated Support</h3>
+      <p class="text-[var(--subtext-color)] text-center">
+        SecurePay gives 24/7 expert help and a personal manager to support your growth.
+      </p>
+    </div>
+
+  </div>
+</section>
 
   <!-- FAQs Section -->
+<section id="faqs" class="bg-indigo-100 scroll-mt-18 px-6 py-12 border-t border-[var(--border-color)]">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl sm:text-4xl font-bold text-[var(--primary-color)] text-center mb-6">
+      Frequently Asked Questions
+    </h2>
+    <p class="text-center text-[var(--text-color)] mb-10">
+      Find quick answers to your most common questions.
+    </p>
 
-    <section id="faqs"  class="bg-indigo-100 scroll-mt-18 px-6 py-12 border-t border-[var(--border-color)]">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl sm:text-4xl font-bold text-[var(--primary-color)] text-center mb-6">Frequently Asked Questions
-      </h2>
-      <p class="text-center text-[var(--text-color)] mb-10">Find quick answers to your most common questions.</p>
+    <div class="space-y-4">
+    
+      <details
+        class="group border border-[var(--border-color)] rounded-lg p-4 bg-white transition 
+               hover:shadow-md active:bg-indigo-50 focus-within:ring-2 focus-within:ring-[var(--primary-color)] outline-none">
+        <summary
+          class="flex justify-between items-center cursor-pointer text-[var(--text-color)] font-medium 
+                 focus:outline-none">
+          <span>Is SecurePay PCI-DSS compliant?</span>
+          <svg class="w-5 h-5 transition-transform duration-300 group-open:rotate-180" fill="none"
+            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M19 9l-7 7-7-7" />
+          </svg>
+        </summary>
+        <p class="mt-3 text-[var(--subtext-color)] text-sm leading-relaxed">
+          Yes, SecurePay is fully PCI-DSS Level 1 certified, offering best-in-class security for all transactions.
+        </p>
+      </details>
 
-      <div class="space-y-4">
-        <details class="group border border-[var(--border-color)] rounded-lg p-4 bg-white">
-          <summary class="flex justify-between items-center cursor-pointer text-[var(--text-color)] font-medium">
-            <span>Is SecurePay PCI-DSS compliant?</span>
-            <svg class="w-5 h-5 transition-transform duration-300 group-open:rotate-180" fill="none"
-              stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path d="M19 9l-7 7-7-7" />
-            </svg>
-          </summary>
-          <p class="mt-3 text-[var(--subtext-color)] text-sm leading-relaxed">
-            Yes, SecurePay is fully PCI-DSS Level 1 certified, offering best-in-class security for all transactions.
-          </p>
-        </details>
+      <details
+        class="group border border-[var(--border-color)] rounded-lg p-4 bg-white transition 
+               hover:shadow-md active:bg-indigo-50 focus-within:ring-2 focus-within:ring-[var(--primary-color)] outline-none">
+        <summary
+          class="flex justify-between items-center cursor-pointer text-[var(--text-color)] font-medium 
+                 focus:outline-none">
+          <span>How soon do I get my settlements?</span>
+          <svg class="w-5 h-5 transition-transform duration-300 group-open:rotate-180" fill="none"
+            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M19 9l-7 7-7-7" />
+          </svg>
+        </summary>
+        <p class="mt-3 text-[var(--subtext-color)] text-sm leading-relaxed">
+          We offer same-day or next-day settlement options, depending on your account settings and preferences.
+        </p>
+      </details>
 
-        <details class="group border border-[var(--border-color)] rounded-lg p-4 bg-white">
-          <summary class="flex justify-between items-center cursor-pointer text-[var(--text-color)] font-medium">
-            <span>How soon do I get my settlements?</span>
-            <svg class="w-5 h-5 transition-transform duration-300 group-open:rotate-180" fill="none"
-              stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path d="M19 9l-7 7-7-7" />
-            </svg> 
-          </summary>
-          <p class="mt-3 text-[var(--subtext-color)] text-sm leading-relaxed">
-            We offer same-day or next-day settlement options, depending on your account settings and preferences.
-          </p>
-        </details>
+      <details
+        class="group border border-[var(--border-color)] rounded-lg p-4 bg-white transition 
+               hover:shadow-md active:bg-indigo-50 focus-within:ring-2 focus-within:ring-[var(--primary-color)] outline-none">
+        <summary
+          class="flex justify-between items-center cursor-pointer text-[var(--text-color)] font-medium 
+                 focus:outline-none">
+          <span>Can I use SecurePay without a website?</span>
+          <svg class="w-5 h-5 transition-transform duration-300 group-open:rotate-180" fill="none"
+            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M19 9l-7 7-7-7" />
+          </svg>
+        </summary>
+        <p class="mt-3 text-[var(--subtext-color)] text-sm leading-relaxed">
+          Yes! Our Universal Payment Links allow you to collect payments via SMS, email, or social media—no website required.
+        </p>
+      </details>
 
-        <details class="group border border-[var(--border-color)] rounded-lg p-4 bg-white">
-          <summary class="flex justify-between items-center cursor-pointer text-[var(--text-color)] font-medium">
-            <span>Can I use SecurePay without a website?</span>
-            <svg class="w-5 h-5 transition-transform duration-300 group-open:rotate-180" fill="none"
-              stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path d="M19 9l-7 7-7-7" />
-            </svg>
-          </summary>
-          <p class="mt-3 text-[var(--subtext-color)] text-sm leading-relaxed">
-            Yes! Our Universal Payment Links allow you to collect payments via SMS, email, or social media—no website
-            required.
-          </p>
-        </details>
-
-        <details class="group border border-[var(--border-color)] rounded-lg p-4 bg-white">
-          <summary class="flex justify-between items-center cursor-pointer text-[var(--text-color)] font-medium">
-            <span>Is there support for developers?</span>
-            <svg class="w-5 h-5 transition-transform duration-300 group-open:rotate-180" fill="none"
-              stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path d="M19 9l-7 7-7-7" />
-            </svg>
-          </summary>
-          <p class="mt-3 text-[var(--subtext-color)] text-sm leading-relaxed">
-            Absolutely. We provide extensive documentation, code samples, and dedicated developer support.
-          </p>
-        </details>
-
-      </div>
+      <details
+        class="group border border-[var(--border-color)] rounded-lg p-4 bg-white transition 
+               hover:shadow-md active:bg-indigo-50 focus-within:ring-2 focus-within:ring-[var(--primary-color)] outline-none">
+        <summary
+          class="flex justify-between items-center cursor-pointer text-[var(--text-color)] font-medium 
+                 focus:outline-none">
+          <span>Is there support for developers?</span>
+          <svg class="w-5 h-5 transition-transform duration-300 group-open:rotate-180" fill="none"
+            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M19 9l-7 7-7-7" />
+          </svg>
+        </summary>
+        <p class="mt-3 text-[var(--subtext-color)] text-sm leading-relaxed">
+          Absolutely. We provide extensive documentation, code samples, and dedicated developer support.
+        </p>
+      </details>
     </div>
-   </section>
- 
- <!-- Contact Section -->
+  </div>
+</section>
 
+<!-- Contact section -->
   <section id="contact" class="bg-[var(--surface-color)] px-6 py-8 scroll-mt-18 border-t border-[var(--border-color)]">
     <h2 class="text-3xl sm:text-4xl mb-5 pt-5 font-bold text-[var(--primary-color)] text-center ">Get in touch
     </h2>
@@ -303,36 +334,50 @@
    
     <div class="max-w-6xl mx-auto flex flex-col-reverse  md:flex-row-reverse items-center gap-10">
 
-      <div class="w-full md:w-1/2">
-      
-        <form class="space-y-4">
-          <div>
-            <label class="block text-sm font-medium mb-1 text-[var(--text-color)]">Name</label>
-            <input type="text" placeholder="Your name"
-              class="w-full border border-[var(--border-color)] rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] bg-[var(--background-color)]" />
-          </div>
-          <div>
-            <label class="block text-sm font-medium mb-1 text-[var(--text-color)]">Email</label>
-            <input type="email" placeholder="you@example.com"
-              class="w-full border border-[var(--border-color)] rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] bg-[var(--background-color)]" />
-          </div>
-          <div>
-            <label class="block text-sm font-medium mb-1 text-[var(--text-color)]">Message</label>
-            <textarea rows="4" placeholder="Your message"
-              class="w-full border border-[var(--border-color)] rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] bg-[var(--background-color)]"></textarea>
-          </div>
-          <button type="submit"
-            class="bg-[var(--primary-color)] text-[var(--primary-text)] px-6 py-2 rounded-md hover:bg-[var(--primary-hover)] transition font-semibold">
-            Send Message
-          </button>
-        </form>
-      </div>
+
+    <div class="w-full md:w-1/2">
+      <form class="space-y-4">
+  
+        <div>
+          <label class="block text-sm font-medium mb-1 text-[var(--text-color)]">Name</label>
+          <input type="text" placeholder="Your name"
+            class="w-full border border-[var(--border-color)] rounded-md px-4 py-2 
+                   bg-[var(--background-color)] text-[var(--text-color)]
+                   focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]
+                   transition  hover:shadow-sm" />
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium mb-1 text-[var(--text-color)]">Email</label>
+          <input type="email" placeholder="you@example.com"
+            class="w-full border border-[var(--border-color)] rounded-md px-4 py-2 
+                   bg-[var(--background-color)] text-[var(--text-color)]
+                   focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]
+                   transition  hover:shadow-sm" />
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium mb-1 text-[var(--text-color)]">Message</label>
+          <textarea rows="4" placeholder="Your message"
+            class="w-full border border-[var(--border-color)] rounded-md px-4 py-2 
+                   bg-[var(--background-color)] text-[var(--text-color)]
+                   focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]
+                   transition  hover:shadow-sm resize-none"></textarea>
+        </div>
+
+        <button type="submit"
+          class="bg-[var(--primary-color)] text-[var(--primary-text)] px-6 py-2 rounded-md 
+                 hover:bg-[var(--primary-hover)] transition font-semibold w-full sm:w-auto
+                 active:ring-2 active:ring-[var(--primary-color)] ">
+          Send Message
+        </button>
+      </form>
+    </div>
 
       <div class="w-full md:w-1/2 flex justify-center items-center">
         <img src="https://img.freepik.com/free-vector/contact-us-concept-illustration_114360-2299.jpg" alt="Contact Us"
           class="max-w-md w-full " />
       </div>
-
     </div>
   </section>
 
@@ -347,68 +392,67 @@
     Secure, scalable, and seamless payments for businesses of all sizes. Grow with confidence.
   </p>
 
-  <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 items-start gap-8 px-6 sm:px-12 py-8 border-b border-gray-300">
-    
-  
+  <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 items-start gap-10 px-4 sm:px-12 py-8 border-b border-gray-300">
+
     <div>
       <h3 class="font-semibold mb-3">Quick Links</h3>
       <ul class="space-y-2 text-sm">
-        <li><a href="#home" class="hover:text-[var(--primary-color)]">Home</a></li>
-        <li><a href="#products" class="hover:text-[var(--primary-color)]">Products</a></li>
-        <li><a href="#benefits" class="hover:text-[var(--primary-color)]">Benefits</a></li>
-        <li><a href="#faqs" class="hover:text-[var(--primary-color)]">FAQs</a></li>
-        <li><a href="#contact" class="hover:text-[var(--primary-color)]">Contact</a></li>
+        <li><a href="#home" class="hover:text-[var(--primary-color)] hover:underline active:scale-[0.97] transition">Home</a></li>
+        <li><a href="#products" class="hover:text-[var(--primary-color)] hover:underline active:scale-[0.97] transition">Products</a></li>
+        <li><a href="#benefits" class="hover:text-[var(--primary-color)] hover:underline active:scale-[0.97] transition">Benefits</a></li>
+        <li><a href="#faqs" class="hover:text-[var(--primary-color)] hover:underline active:scale-[0.97] transition">FAQs</a></li>
+        <li><a href="#contact" class="hover:text-[var(--primary-color)] hover:underline active:scale-[0.97] transition">Contact</a></li>
       </ul>
     </div>
 
-
+  
     <div>
       <h3 class="font-semibold mb-3">Resources</h3>
       <ul class="space-y-2 text-sm">
-        <li><a href="#" class="hover:text-[var(--primary-color)]">Documentation</a></li>
-        <li><a href="#" class="hover:text-[var(--primary-color)]">Support</a></li>
-        <li><a href="#" class="hover:text-[var(--primary-color)]">Pricing</a></li>
-        <li><a href="#" class="hover:text-[var(--primary-color)]">Blog</a></li>
+        <li><a href="#" class="hover:text-[var(--primary-color)] hover:underline active:scale-[0.97] transition">Documentation</a></li>
+        <li><a href="#" class="hover:text-[var(--primary-color)] hover:underline active:scale-[0.97] transition">Support</a></li>
+        <li><a href="#" class="hover:text-[var(--primary-color)] hover:underline active:scale-[0.97] transition">Pricing</a></li>
+        <li><a href="#" class="hover:text-[var(--primary-color)] hover:underline active:scale-[0.97] transition">Blog</a></li>
       </ul>
     </div>
 
-
+    
     <div>
       <h3 class="font-semibold mb-3">Company</h3>
       <ul class="space-y-2 text-sm">
-        <li><a href="#" class="hover:text-[var(--primary-color)]">About Us</a></li>
-        <li><a href="#" class="hover:text-[var(--primary-color)]">Careers</a></li>
-        <li><a href="#" class="hover:text-[var(--primary-color)]">Terms & Conditions</a></li>
-        <li><a href="#" class="hover:text-[var(--primary-color)]">Privacy Policy</a></li>
+        <li><a href="#" class="hover:text-[var(--primary-color)] hover:underline active:scale-[0.97] transition">About Us</a></li>
+        <li><a href="#" class="hover:text-[var(--primary-color)] hover:underline active:scale-[0.97] transition">Careers</a></li>
+        <li><a href="#" class="hover:text-[var(--primary-color)] hover:underline active:scale-[0.97] transition">Terms & Conditions</a></li>
+        <li><a href="#" class="hover:text-[var(--primary-color)] hover:underline active:scale-[0.97] transition">Privacy Policy</a></li>
       </ul>
     </div>
 
+
     <div>
       <h3 class="font-semibold mb-3">Follow Us</h3>
-      <div class="flex  gap-2">
-        <a href="#" aria-label="LinkedIn" class="hover:opacity-80 transition">
+      <div class="flex gap-3 mt-2">
+        <a href="#" aria-label="LinkedIn" class="hover:opacity-80  active:opacity-80  hover:scale-110 transition-transform">
           <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" class="w-6 h-6">
         </a>
-        <a href="#" aria-label="GitHub" class="hover:opacity-80 transition">
+        <a href="#" aria-label="GitHub" class="hover:opacity-80  active:opacity-80 hover:scale-110 transition-transform">
           <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" class="w-6 h-6">
         </a>
-        <a href="#" aria-label="Instagram" class="hover:opacity-80 transition">
+        <a href="#" aria-label="Instagram" class="hover:opacity-80 active:opacity-80  hover:scale-110 transition-transform">
           <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="w-6 h-6">
         </a>
-        <a href="#" aria-label="Facebook" class="hover:opacity-80 transition">
+        <a href="#" aria-label="Facebook" class="hover:opacity-80  active:opacity-80 hover:scale-110 transition-transform">
           <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" class="w-6 h-6">
         </a>
       </div>
     </div>
-
-  
-
   </div>
+
 
   <div class="text-center text-sm text-[var(--text-color)] border-t border-[var(--border-color)] pt-4">
     &copy; 2025 SecurePay. All rights reserved.
   </div>
 </footer>
+
 
 
 </body>
