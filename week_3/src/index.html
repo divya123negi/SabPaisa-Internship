@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment Form</title>
+  <link rel="stylesheet" href="./output.css" />
+</head>
+
+<body class="h-screen flex items-center justify-center bg-gray-900 box-border">
+  <form id="paymentForm"
+    class="w-full shadow-2xl m-5 sm:w-11/12 md:w-3/4 lg:w-1/2 p-4 h-[85vh] bg-white overflow-auto rounded ">
+    <h1 class="text-2xl font-bold text-center mb-6">Payment Form</h1>
+
+    <!-- Personal Info -->
+    <fieldset class="mb-6">
+      <legend class="text-lg font-semibold text-gray-700 mb-3"> Personal Information </legend>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <label for="fullName" class="font-semibold">Full Name:</label>
+          <input type="text" id="fullName" placeholder="Your name"
+            class="border border-gray-300 rounded w-full p-2 mb-1" />
+          <div id="fullNameError" class="text-red-600 text-sm"></div>
+        </div>
+        <div>
+          <label for="email" class="font-semibold">Email:</label>
+          <input type="email" id="email" placeholder="you@example.com" novalidate
+            class="border border-gray-300 rounded w-full p-2 mb-1" />
+          <div id="emailError" class="text-red-600 text-sm"></div>
+        </div>
+        <div>
+          <label for="address" class="font-semibold">Address:</label>
+          <input type="text" id="address" placeholder="Street address"
+            class="border border-gray-300 rounded w-full p-2 mb-1" />
+          <div id="addressError" class="text-red-600 text-sm"></div>
+        </div>
+        <div>
+          <label for="state" class="font-semibold">State:</label>
+          <input type="text" id="state" placeholder="Your state"
+            class="border border-gray-300 rounded w-full p-2 mb-1" />
+          <div id="stateError" class="text-red-600 text-sm"></div>
+        </div>
+        <div>
+          <label for="city" class="font-semibold">City:</label>
+          <input type="text" id="city" placeholder="Your city" class="border border-gray-300 rounded w-full p-2 mb-1" />
+          <div id="cityError" class="text-red-600 text-sm"></div>
+        </div>
+        <div>
+          <label for="zip" class="font-semibold">Zip Code:</label>
+          <input type="text" id="zip" placeholder="Enter your zip code" inputmode="numeric"
+            class="border border-gray-300 rounded w-full p-2 mb-1" />
+          <div id="zipError" class="text-red-600 text-sm"></div>
+        </div>
+      </div>
+    </fieldset>
+
+    <!-- Payment Details -->
+    <fieldset>
+      <legend class="text-lg font-semibold text-gray-700 mb-3">Payment Details</legend>
+      <div class="flex flex-col gap-4">
+
+        <div>
+          <label for="upi" class="font-semibold">UPI ID:</label>
+          <input type="text" id="upi" placeholder="your@upi" class="border border-gray-300 rounded w-full p-2 mb-1" />
+          <div id="upiError" class="text-red-600 text-sm"></div>
+        </div>
+
+<div class="flex items-center justify-center">
+  <span class="h-2px w-full border  border-gray-300 "></span>
+  <span class="px-3 text-gray-500 text-sm font-semibold">OR</span>
+  <span class="h-2px w-full border border-gray-300"></span>
+</div>
+
+        <div class="mt-0">
+          <label for="cardNumber" class="font-semibold">Credit Card Number:</label>
+          <input type="text" id="cardNumber" placeholder="1234 1234 1234 1234" inputmode="numeric"
+            class="border border-gray-300 rounded w-full p-2 mb-1" />
+          <div id="cardNumberError" class="text-red-600 text-sm"></div>
+        </div>
+        <div>
+          <label for="expiry" class="font-semibold">Expiry (Month/Year):</label>
+          <input type="month" id="expiry" name="expiry" placeholder="Expiry date of card"
+            class="border border-gray-300 rounded w-full p-2 mb-1" />
+          <div id="expiryError" class="text-red-600 text-sm"></div>
+        </div>
+        <div>
+          <label for="cvv" class="font-semibold">CVV:</label>
+          <input type="text" id="cvv" placeholder="3-digit CVV" inputmode="numeric"
+            class="border border-gray-300 rounded w-full p-2 mb-1" />
+          <div id="cvvError" class="text-red-600 text-sm"></div>
+        </div>
+
+      </div>
+
+    </fieldset>
+
+    <!-- Terms & Conditions -->
+    <div class="mt-6">
+      <input type="checkbox" id="t&c" />
+      <label for="t&c">
+        I have read and agree to the
+        <a href="#" target="_blank" class="text-blue-600 hover:underline">terms and conditions</a>.
+      </label>
+      <div id="termsConditionsError" class="text-red-600 text-sm mt-1"></div>
+    </div>
+
+    <!-- Submit and Reset Button -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class=" mt-5  w-full">
+      <button type="submit"
+        class="w-full bg-gray-950 active:bg-gray-800 text-white py-3 rounded hover:bg-gray-800 transition duration-300">
+        Submit
+      </button>
+    </div>
+    <div class="md:mt-5  w-full">
+    <button id="resetBtn"
+        class="w-full bg-gray-300 hover:bg-gray-200 active:bg-gray-200 text-black py-3 rounded  transition duration-300">
+        Reset
+      </button>
+    </div>
+</div>
+  </form>
+
+  <!-- Submitted Details Section -->
+
+
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
